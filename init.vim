@@ -48,8 +48,12 @@ Plug 'liuchengxu/vim-which-key'
 
 " Color schemes
 Plug 'gruvbox-community/gruvbox'
+Plug 'phanviet/vim-monokai-pro'
 
+" Syntax Highlight
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
+"Plug 'tmhedberg/simpylfold'
 call plug#end()
 
 " In ~/.vim/vimrc, or somewhere similar.
@@ -77,6 +81,7 @@ source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/java.vim
 source ~/.config/nvim/plugins/fold.vim
 source ~/.config/nvim/plugins/plugvim.vim
+source ~/.config/nvim/plugins/colors.vim
 
 "lua <<EOF
 "require'nvim-treesitter.configs'.setup {
@@ -85,3 +90,5 @@ source ~/.config/nvim/plugins/plugvim.vim
   "}
 "}
 "EOF
+"
+"

@@ -17,9 +17,9 @@ backup() {
 
 install() {
   echo "Installing";
-  cp -r plugins ~/.vim
-  cp -r coc-settings.json ~/.vim/
-  cp .vimrc ~
+  cp -r plugins ~/.config/nvim
+  cp -r coc-settings.json ~/.config/nvim
+  cp init.vim ~/.config/nvim
   cp .hyper.js ~
   cp -r ultisnips ~/.config/coc
   cp -r aliases.zsh ~/.oh-my-zsh/custom/

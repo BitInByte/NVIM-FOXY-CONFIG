@@ -5,7 +5,6 @@ syntax on
 set title
 set guicursor&
 set background=dark
-"colorscheme ron
 set ruler
 highlight Comment ctermfg=green
 " Identation setting
@@ -43,7 +42,5 @@ set nowrap
 " Set a column for linting
 set signcolumn=yes
 
-" Colorschemes
-colorscheme gruvbox
 
 set ma

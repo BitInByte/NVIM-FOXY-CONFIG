@@ -57,8 +57,10 @@ tnoremap <Esc> <C-\><C-n>
 "tmap <Leader>k <c-w>:term ++close<cr>
 
 " vim-powered terminal in new tab
-map <Leader>K :tab term ++close<cr>
-tmap <Leader>K <c-w>:tab term ++close<cr>
+"map <Leader>K :tab term ++close<cr>
+"tmap <Leader>K <c-w>:tab term ++close<cr>
+"map <Leader>K :tab term zsh<cr>
+"tmap <Leader>K <c-w>:tab term zsh<cr>
 
 " Open vimrc
 nnoremap <leader>. :edit ~/.config/nvim/init.vim<CR>
@@ -72,3 +74,6 @@ nnoremap <leader>or :set relativenumber!<CR>
 
 " Tag Bar Toggle
 "nmap <leader>p :TagbarToggle<CR>
+
+" Toggle Terminal
+nnoremap <leader>y <C-^>

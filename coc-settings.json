@@ -24,25 +24,6 @@
     "python": ["python"],
     "php": ["php"]
   },
-  "languageserver": {
-    "graphql": {
-      "command": "graphql-lsp",
-      "args": ["server", "-m", "stream"],
-      // customize filetypes to your needs
-      "filetypes": [
-        "typescript",
-        "typescriptreact",
-        "javascript",
-        "javascriptreact",
-        "graphql"
-      ]
-    },
-    "dockerfile": {
-      "command": "docker-langserver",
-      "filetypes": ["dockerfile"],
-      "args": ["--stdio"]
-    }
-  },
 
   // Python Settings
   "python.analysis.diagnosticSeverityOverrides": {
@@ -70,5 +51,9 @@
   // Vue Settings
   "vetur.useWorkspaceDependencies": true,
   "vetur.validation.templateProps": true,
-  "vetur.experimental.templateInterpolationService": true
+  "vetur.experimental.templateInterpolationService": true,
+
+  "intelephense.environment.shortOpenTag": true,
+  "intelephense.phpdoc.useFullyQualifiedNames": true,
+  "intelephense.format.braces": "k&r"
 }
