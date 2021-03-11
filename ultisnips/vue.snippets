@@ -1,0 +1,100 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+extends javascript
+extends typescript
+
+snippet jvoc "Vue JS Options Component JavaScript Based" b
+<template>
+</template>
+<scipt>
+	export default {
+		name: "${1:`!p snip.rv = snip.basename`}",
+		data() {
+			return {
+			}
+		},
+		// Watch state or db to re render the component
+		watch: {
+		},
+		// getters and setters
+		// By default computed is a getter but we can also declare setters as well
+		computed: {
+			// We use the this keyword to refer to the data(){} (state)
+		},
+		// functions to be used with the component
+		methods: {
+		},
+		// Components that we need to pass it into the template goes here...
+		// We declare them after the <script> tag and we declare them with import statement
+		components: {
+		},
+		//  Lifecycle hooks
+		mounted() {
+			// Runs whenever the component is loaded
+		},
+		// there is a bunch of lifecycle hooks and the most important are mounted, unmounted, created, updated
+	}
+</scipt>
+<style lang="scss">
+</style>
+endsnippet
+
+snippet tvoc "Vue JS Options Component TypeScript Based" b
+<template>
+</template lang="ts">
+<scipt>
+	import {defaultComponent} from "vue";
+	export default defaultComponent({
+		name: "${1:`!p snip.rv = snip.basename`}",
+		data() {
+			return {
+			}
+		},
+		// Watch state or db to re render the component
+		watch: {
+		},
+		// getters and setters
+		// By default computed is a getter but we can also declare setters as well
+		computed: {
+			// We use the this keyword to refer to the data(){} (state)
+		},
+		// functions to be used with the component
+		methods: {
+		},
+		// Components that we need to pass it into the template goes here...
+		// We declare them after the <script> tag and we declare them with import statement
+		components: {
+		},
+		//  Lifecycle hooks
+		mounted() {
+			// Runs whenever the component is loaded
+		},
+		// there is a bunch of lifecycle hooks and the most important are mounted, unmounted, created, updated
+	})
+</scipt>
+<style lang="scss">
+</style>
+endsnippet

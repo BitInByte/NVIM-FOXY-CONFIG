@@ -1,0 +1,74 @@
+{
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "scss",
+    "markdown",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "json",
+    "javascriptreact",
+    "typescript.tsx",
+    "graphql",
+    "python",
+    "php",
+    "java"
+  ],
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["typescript"],
+    "typescript": ["typescript"],
+    "javascript": ["javascript"],
+    "python": ["python"],
+    "php": ["php"]
+  },
+  "languageserver": {
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": ["server", "-m", "stream"],
+      // customize filetypes to your needs
+      "filetypes": [
+        "typescript",
+        "typescriptreact",
+        "javascript",
+        "javascriptreact",
+        "graphql"
+      ]
+    },
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    }
+  },
+
+  // Python Settings
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportGeneralTypeIssues": "none"
+  },
+  "python.linting.mypyEnabled": false,
+  "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+
+  // Enable Vue
+  "prettier.disableLanguages": [],
+
+  // Enable information after each instance
+  "codeLens.enable": true,
+
+  // Suggestions priorities
+  "snippets.priority": 1,
+  "suggest.languageSourcePriority": 99,
+  "coc.source.file.priority": 2,
+  "coc.source.around.priority": 3,
+  "coc.source.buffer.priority": 4,
+
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.trace.server": "verbose",
+
+  // Vue Settings
+  "vetur.useWorkspaceDependencies": true,
+  "vetur.validation.templateProps": true,
+  "vetur.experimental.templateInterpolationService": true
+}
