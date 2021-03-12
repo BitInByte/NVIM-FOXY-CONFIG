@@ -82,6 +82,7 @@ source ~/.config/nvim/plugins/java.vim
 source ~/.config/nvim/plugins/fold.vim
 source ~/.config/nvim/plugins/plugvim.vim
 source ~/.config/nvim/plugins/colors.vim
+source ~/.config/nvim/plugins/terminal_toggle.vim
 
 "lua <<EOF
 "require'nvim-treesitter.configs'.setup {

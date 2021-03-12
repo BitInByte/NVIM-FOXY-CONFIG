@@ -11,3 +11,7 @@ colorscheme monokai_pro
 " https://stackoverflow.com/questions/27235102/vim-randomly-breaks-syntax-highlighting
 autocmd BufEnter * syntax sync fromstart
 syntax sync minlines=20
+
+" Fixing bug that react with typescript doesn't highlight
+autocmd bufnewfile,bufread *.tsx set filetype=typescript.tsx
+autocmd bufnewfile,bufread *.jsx set filetype=javascript.jsx
