@@ -93,7 +93,9 @@ let g:which_key_map.c = {
 let g:which_key_map.o = {
     \ 'name' : '+options',
     \ 'n' : ['set nu', 'Set Normal Numbers'],
-    \ 'r' : ['set relativenumber', 'Set Relative Numbers']
+    \ 'r' : ['set relativenumber', 'Set Relative Numbers'],
+    \ 'g' : ['colorscheme gruvbox', 'Set Gruvbox Theme'],
+    \ 'm' : ['colorscheme monokay_pro', "Set Monokai Theme"]
     \ }
 
 let g:which_key_map.p = {

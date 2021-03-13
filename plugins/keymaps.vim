@@ -71,6 +71,8 @@ nnoremap <leader>, :so ~/.config/nvim/init.vim<CR>
 " Options Keymaps
 nnoremap <leader>on :set nu?<CR>
 nnoremap <leader>or :set relativenumber!<CR>
+nnoremap <leader>og :colorscheme gruvbox<CR>
+nnoremap <leader>om :colorscheme monokai_pro<CR>
 
 " Tag Bar Toggle
 "nmap <leader>p :TagbarToggle<CR>

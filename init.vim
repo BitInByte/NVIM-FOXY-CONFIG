@@ -36,7 +36,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Vim LSP Manager
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'styled-components/vim-styled-components'
+Plug 'styled-components/vim-styled-components'
 "Plug 'ycm-core/YouCompleteMe'
 "Plug 'leafgarland/typescript-vim'
 

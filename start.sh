@@ -13,6 +13,7 @@ backup() {
   #cp -r ~/.config .
   #cp -r ~/.oh-my-zsh .
   cp ~/.zshrc .
+  #brew bundle dump
 }
 
 install() {
