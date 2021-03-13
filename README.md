@@ -34,3 +34,5 @@ java com.company.Main
 15. Added a basic compiler which compiles basic standalone projects without any library. You should be on the root foder of the project, one up to src
 
 16. This config requires Neovim V0.5
+
+17. Installation of tmux is required and can be achieved with homebrew

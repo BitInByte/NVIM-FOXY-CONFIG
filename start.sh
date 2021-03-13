@@ -26,6 +26,7 @@ install() {
   cp -r ultisnips ~/.config/coc
   cp -r aliases.zsh ~/.oh-my-zsh/custom/
   cp .zshrc ~
+  cp .tmux.conf ~
 }
 
 case $1 in
