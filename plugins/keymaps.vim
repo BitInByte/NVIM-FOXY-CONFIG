@@ -47,6 +47,7 @@ noremap <leader>t9 9gt
 noremap <leader>t0 :tablast<cr>
 nnoremap <leader>[ :tabprevious<CR>
 noremap <leader>] :tabnext<CR>
+nnoremap <leader>tw :tabnew<CR>
 
 "inoremap <leader>b <leader>v<space>
 

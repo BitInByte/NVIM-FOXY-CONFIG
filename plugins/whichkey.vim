@@ -61,6 +61,7 @@ let g:which_key_map.t = {
     \ 'q' : ['wincmd c', 'Quit Current Tab'],
     \ 't' : ['sp', 'Split Vim Horizontaly'],
     \ 'T' : ['vsp', 'Split Vim Vertically'],
+    \ 'w' : ['tabnew', 'Create New Window'],
     \ '1' : ['1gt', 'Go To Tab 1'],
     \ '2' : ['2gt', 'Go To Tab 2'],
     \ '3' : ['3gt', 'Go To Tab 3'],

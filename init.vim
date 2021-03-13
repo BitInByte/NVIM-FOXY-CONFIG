@@ -51,7 +51,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'phanviet/vim-monokai-pro'
 
 " Syntax Highlight
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 "Plug 'tmhedberg/simpylfold'
 call plug#end()
@@ -83,6 +83,7 @@ source ~/.config/nvim/plugins/fold.vim
 source ~/.config/nvim/plugins/plugvim.vim
 source ~/.config/nvim/plugins/colors.vim
 source ~/.config/nvim/plugins/terminal_toggle.vim
+"source ~/.config/nvim/plugins/tmux.vim
 
 "lua <<EOF
 "require'nvim-treesitter.configs'.setup {

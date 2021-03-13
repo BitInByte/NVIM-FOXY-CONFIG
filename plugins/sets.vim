@@ -44,3 +44,5 @@ set signcolumn=yes
 
 
 set ma
+
+set autochdir
