@@ -52,6 +52,7 @@
   "vetur.useWorkspaceDependencies": true,
   "vetur.validation.templateProps": true,
   "vetur.experimental.templateInterpolationService": true,
+  "vetur.validation.script": true,
 
   "intelephense.environment.shortOpenTag": true,
   "intelephense.phpdoc.useFullyQualifiedNames": true,
