@@ -29,7 +29,7 @@ extends typescript
 snippet jvoc "Vue JS Options Component JavaScript Based" b
 <template>
 </template>
-<scipt>
+<script>
 	export default {
 		name: "${1:`!p snip.rv = snip.basename`}",
 		data() {
@@ -57,17 +57,17 @@ snippet jvoc "Vue JS Options Component JavaScript Based" b
 		},
 		// there is a bunch of lifecycle hooks and the most important are mounted, unmounted, created, updated
 	}
-</scipt>
-<style lang="scss">
+</script>
+<style lang="scss" scoped>
 </style>
 endsnippet
 
 snippet tvoc "Vue JS Options Component TypeScript Based" b
 <template>
-</template lang="ts">
-<scipt>
-	import {defaultComponent} from "vue";
-	export default defaultComponent({
+</template>
+<script lang="ts">
+	import {defineComponent} from "vue";
+	export default defineComponent({
 		name: "${1:`!p snip.rv = snip.basename`}",
 		data() {
 			return {
@@ -94,7 +94,7 @@ snippet tvoc "Vue JS Options Component TypeScript Based" b
 		},
 		// there is a bunch of lifecycle hooks and the most important are mounted, unmounted, created, updated
 	})
-</scipt>
-<style lang="scss">
+</script>
+<style lang="scss" scoped>
 </style>
 endsnippet

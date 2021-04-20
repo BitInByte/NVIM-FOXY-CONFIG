@@ -108,5 +108,18 @@ let g:which_key_map.p = {
     \ 's' : ["PlugStatus", 'Plug Status']
     \ }
 
+let g:which_key_map.b = {
+  \ 'name' : '+buff',
+  \ 'l' : ['bl :ls<CR>:b<Space>', 'List all buffers'],
+  \ ']' : ['b] :bnext<CR>', 'Next buffer'],
+  \ '[' : ['b[ :bprev<CR>', 'Previous buffer'],
+  \ }
+
+let g:which_key_map.s = {
+  \ 'name' : '+cSpell',
+  \ 'e' : [':CocCommand cSpell.toggleEnableSpellChecker', 'Toggle spell checker'],
+  \ 'a' : [':CocCommand cSpell.addWordToDictionary', 'Add word to dictionary'],
+  \ }
+
 " Apply Dictionary
 call which_key#register('<Space>', "g:which_key_map")

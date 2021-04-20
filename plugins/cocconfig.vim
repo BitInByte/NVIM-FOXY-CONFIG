@@ -230,4 +230,7 @@ let g:coc_global_extensions = [
       \ 'coc-vetur',
       \ 'coc-emmet',
       \ 'coc-java',
+      \ 'coc-angular',
+      \ 'coc-spell-checker',
+      \ 'coc-cspell-dicts'
     \ ]

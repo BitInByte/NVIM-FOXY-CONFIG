@@ -3,6 +3,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "scss",
+    "html",
     "markdown",
     "javascript",
     "typescript",
@@ -24,6 +25,9 @@
     "python": ["python"],
     "php": ["php"]
   },
+
+  // Prettier Settings
+  "prettier.singleQuote": true,
 
   // Python Settings
   "python.analysis.diagnosticSeverityOverrides": {
@@ -54,7 +58,22 @@
   "vetur.experimental.templateInterpolationService": true,
   "vetur.validation.script": true,
 
+  // PHP
   "intelephense.environment.shortOpenTag": true,
   "intelephense.phpdoc.useFullyQualifiedNames": true,
-  "intelephense.format.braces": "k&r"
+  "intelephense.format.braces": "k&r",
+
+  // Language Spell Check
+  "cSpellExt.enableDictionaries": ["portuguese"],
+  "cSpell.language": "en, pt_PT",
+  "cSpell.ignorePaths": [
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    ".vscode",
+    ".git",
+    "*.dll",
+    "**/*.dll"
+  ]
 }

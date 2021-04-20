@@ -28,7 +28,7 @@ set smartcase
 set ignorecase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 " Highlight as we search
 set incsearch
@@ -45,5 +45,6 @@ set signcolumn=yes
 
 set ma
 
+" If enable, change the root folder to the currnt file directory
 set noautochdir
 "set autochdir

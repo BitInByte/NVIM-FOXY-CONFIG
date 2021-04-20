@@ -80,3 +80,16 @@ nnoremap <leader>om :colorscheme monokai_pro<CR>
 
 " Toggle Terminal
 nnoremap <leader>y <C-^>
+
+" Buffers
+nnoremap <Leader>bl :ls<CR>:b<Space>
+nnoremap <leader>b] :bnext<CR>
+nnoremap <leader>b[ :bprev<CR>
+
+" Move Lines
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
