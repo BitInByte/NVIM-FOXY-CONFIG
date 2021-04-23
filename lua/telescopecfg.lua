@@ -8,6 +8,7 @@ require('telescope').setup{
     file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
     grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
     file_ignore_patterns = {"node_modules"},
+    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
     mappings = {
       i = {
         ["<esc>"] = actions.close,

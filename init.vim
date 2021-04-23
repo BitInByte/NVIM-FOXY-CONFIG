@@ -64,20 +64,10 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " Treesitter highlight this now
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/playground'
 call plug#end()
 
-" In ~/.vim/vimrc, or somewhere similar.
-"let g:ale_fixers = {
-"\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-"\   'javascript': ['prettier'],
-"\}
-
-"let g:ale_linters_explicit = 1
-
-" Set this variable to 1 to fix files when you save them.
-"let g:ale_fix_on_save = 1
-"let g:ale_set_ballons = 1
-
+" Sourcing my configs
 source ~/.config/nvim/plugins/sets.vim
 source ~/.config/nvim/plugins/ale.vim
 source ~/.config/nvim/plugins/fix.vim
@@ -97,7 +87,6 @@ source ~/.config/nvim/plugins/cspell.vim
 "source ~/.config/nvim/plugins/tmux.vim
 source ~/.config/nvim/plugins/telescope.vim
 
-
-
 " Lua stuff
 lua require("init")
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }

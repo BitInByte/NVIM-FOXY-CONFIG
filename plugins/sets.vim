@@ -43,8 +43,9 @@ set nowrap
 set signcolumn=yes
 
 
+" Let modify the file
 set ma
 
-" If enable, change the root folder to the currnt file directory
+" If enable, change the root folder to the current file directory
 set noautochdir
-"set autochdir
+" set autochdir
