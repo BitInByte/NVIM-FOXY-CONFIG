@@ -17,8 +17,8 @@ Plug 'vim-utils/vim-man'
 Plug 'dense-analysis/ale'
 
 " Fuzy Finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 " NerdTree Explorer
 Plug 'preservim/nerdtree'
@@ -55,6 +55,15 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'posva/vim-vue'
 
 "Plug 'tmhedberg/simpylfold'
+"
+" Telescope thing
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+" Treesitter highlight this now
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()
 
 " In ~/.vim/vimrc, or somewhere similar.
@@ -78,7 +87,7 @@ source ~/.config/nvim/plugins/cocconfig.vim
 source ~/.config/nvim/plugins/functions.vim
 source ~/.config/nvim/plugins/lightline.vim
 source ~/.config/nvim/plugins/whichkey.vim
-source ~/.config/nvim/plugins/fzf.vim
+" source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/java.vim
 source ~/.config/nvim/plugins/fold.vim
 source ~/.config/nvim/plugins/plugvim.vim
@@ -86,13 +95,9 @@ source ~/.config/nvim/plugins/colors.vim
 source ~/.config/nvim/plugins/terminal_toggle.vim
 source ~/.config/nvim/plugins/cspell.vim
 "source ~/.config/nvim/plugins/tmux.vim
+source ~/.config/nvim/plugins/telescope.vim
 
-"lua <<EOF
-"require'nvim-treesitter.configs'.setup {
-  "indent = {
-    "enable = true
-  "}
-"}
-"EOF
-"
-"
+
+
+" Lua stuff
+lua require("init")

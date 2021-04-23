@@ -5,6 +5,7 @@ backup() {
   echo "Backing up...";
   #cp -r ~/.vim .
   cp -r ~/.config/nvim/plugins .
+  cp -r ~/.config/nvim/lua .
   cp ~/.config/nvim/coc-settings.json .
   cp ~/.config/nvim/init.vim .
   cp ~/.hyper.js .

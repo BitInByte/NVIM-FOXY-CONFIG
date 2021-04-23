@@ -232,5 +232,5 @@ let g:coc_global_extensions = [
       \ 'coc-java',
       \ 'coc-angular',
       \ 'coc-spell-checker',
-      \ 'coc-cspell-dicts'
+      \ 'coc-cspell-dicts',
     \ ]
