@@ -6,8 +6,10 @@ brew "cmake"
 brew "git"
 brew "go"
 brew "graphviz"
+brew "luajit", args: ["HEAD"]
 brew "mono"
-brew "neovim"
+brew "neovim", args: ["HEAD"]
+brew "ripgrep"
 brew "tmux"
 brew "vim"
 cask "blackhole-2ch"
