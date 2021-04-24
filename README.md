@@ -1,6 +1,18 @@
 # Config For Vim GOD
 
-## Instalation process
+## External Dependencies
+
+1. Vim-Plug
+2. Tmux
+3. Neovim nightly (0.5) or Vim 8
+4. ripgrep: https://github.com/BurntSushi/ripgrep (if neovim)
+5. Cascadia code font
+
+## Before installation process
+
+This config is being tested to work in both vim and neovim, it is intended to have a cross platform config which works well in both
+
+## Installation process
 
 1. Install Vim-plug https://github.com/junegunn/vim-plug
 2. If wanted YCM, here is the installation process https://github.com/ycm-core/YouCompleteMe
@@ -11,10 +23,9 @@
 7. To use python, we need to create a virtual environment with the command "python3 -m venv .venv" and then we need to active the environment source .venv/bin/activate and then we need to install the autopep8 with pip
 8. Python needs a autopep8 installed in the global environment in order to use prettifier, to do so: pip install autopep8
 9. There is a start.sh which can be passed the install argument which will copy this files to the respective folders.
-10. NOTE: This config is only for VIM 8.0
-11. You can use the keymaps.vim file inside of plugins folder to see which keybinds I am using
-12. Java LSP only compyles maven or gradle, for standalone projects we need to use javac to compile them, autocompletion and linting works in all
-13. To compile our standalone project here is the command which we should execute it inside of our src folder to read correctly the packages:
+10. You can use the keymaps.vim file inside of plugins folder to see which keybinds I am using
+11. Java LSP only compiles maven or gradle, for standalone projects we need to use javac to compile them, autocompletion and linting works in all
+12. To compile our standalone project here is the command which we should execute it inside of our src folder to read correctly the packages:
 
 ```
 javac --class-path . com/company/Main.java -verbose -d ../output/production/
@@ -34,6 +45,4 @@ java com.company.Main
 
 15. Added a basic compiler which compiles basic standalone projects without any library. You should be on the root foder of the project, one up to src
 
-16. This config requires Neovim V0.5
-
-17. Installation of tmux is required and can be achieved with homebrew
+16. For treesitter, only for neovim, you can install language interpreter by :TSInstall <language>
