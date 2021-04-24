@@ -47,12 +47,31 @@ let g:which_key_map.d = {
     \ 'r' : ['<Plug>(coc-references)', 'References'],
     \ }
 
+" let g:which_key_map.f = {
+    " \ 'name' : '+fzf',
+    " \ 'f' : [':Files', 'Find Files'],
+    " \ 'b' : [':Buffers', 'Find Files in Buffer'],
+    " \ 's' : [':Rg', 'Find Strings in Files'],
+    " \ 'g' : [':GFiles', 'Find Files In Git Repo Directory'],
+    " \ }
+
 let g:which_key_map.f = {
     \ 'name' : '+fzf',
-    \ 'f' : [':Files', 'Find Files'],
-    \ 'b' : [':Buffers', 'Find Files in Buffer'],
-    \ 's' : [':Rg', 'Find Strings in Files'],
-    \ 'g' : [':GFiles', 'Find Files In Git Repo Directory'],
+    \ 'f' : ['find_files', 'Find Files'],
+    \ 'b' : ['buffers', 'Find Files in Buffer'],
+    \ '/' : ['live_grep', 'Find Strings in Files'],
+    \ 'e' : ['file_browser', 'File Browser'],
+    \ 'c' : ['colorscheme', 'Colorschemes'],
+    \ 'k' : ['keymaps', 'Key Maps'],
+    \ 't' : ['treesitter', 'Treesitter'],
+    \ 's' : ['spell_suggest', 'Spell Suggest'],
+    \ 'h' : ['help_tags', 'Help Tags'],
+    \ 'g' : {
+      \ 'name' : '+git',
+        \ 's' : ['git_status', 'Git Status'],
+        \ 'c' : ['git_commits', 'Git Commits'],
+        \ 'b' : ['git_branches', 'Git Branches']
+        \ },
     \ }
 
 " t - Tab Manipulation

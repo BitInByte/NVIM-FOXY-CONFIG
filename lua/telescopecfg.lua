@@ -3,6 +3,15 @@ local actions = require('telescope.actions')
 ------------------------------
 require('telescope').setup{
   defaults = {
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case'
+    },
     prompt_prefix = '> ',
     color_devicons = true,
     file_previewer   = require('telescope.previewers').vim_buffer_cat.new,

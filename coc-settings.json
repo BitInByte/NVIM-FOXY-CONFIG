@@ -15,7 +15,9 @@
     "graphql",
     "python",
     "php",
-    "java"
+    "java",
+    "vim",
+    "lua"
   ],
   "snippets.extends": {
     "javascriptreact": ["javascript"],

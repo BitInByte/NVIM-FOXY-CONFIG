@@ -9,16 +9,16 @@ filetype plugin indent on
 
  "Installed via vim plug https://github.com/junegunn/vim-plug
 " :PlugInstall to install them
-call plug#begin('~/.config/nvim/plugged')
+if has('nvim')
+  call plug#begin('~/.config/nvim/plugged')
+else
+  call plug#begin('~/.vim/plugged')
+endif
 " Vim Manual
 Plug 'vim-utils/vim-man'
 
 " Linting
 Plug 'dense-analysis/ale'
-
-" Fuzy Finder
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 
 " NerdTree Explorer
 Plug 'preservim/nerdtree'
@@ -55,16 +55,25 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'posva/vim-vue'
 
 "Plug 'tmhedberg/simpylfold'
-"
-" Telescope thing
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
-" Treesitter highlight this now
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-Plug 'nvim-treesitter/playground'
+if has('nvim')
+  " Telescope thing
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-fzy-native.nvim'
+else
+  " Fuzy Finder
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+endif
+
+if has('nvim')
+  " Treesitter highlight this now
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+  Plug 'nvim-treesitter/playground'
+endif
+
 call plug#end()
 
 " Sourcing my configs
@@ -77,7 +86,6 @@ source ~/.config/nvim/plugins/cocconfig.vim
 source ~/.config/nvim/plugins/functions.vim
 source ~/.config/nvim/plugins/lightline.vim
 source ~/.config/nvim/plugins/whichkey.vim
-" source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/java.vim
 source ~/.config/nvim/plugins/fold.vim
 source ~/.config/nvim/plugins/plugvim.vim
@@ -85,8 +93,18 @@ source ~/.config/nvim/plugins/colors.vim
 source ~/.config/nvim/plugins/terminal_toggle.vim
 source ~/.config/nvim/plugins/cspell.vim
 "source ~/.config/nvim/plugins/tmux.vim
-source ~/.config/nvim/plugins/telescope.vim
+
+if has('nvim')
+  source ~/.config/nvim/plugins/telescope.vim
+else
+  source ~/.config/nvim/plugins/fzf.vim
+endif
+
+" if executable('rg')
+    " let g:rg_derive_root='true'
+" endif
 
 " Lua stuff
-lua require("init")
-lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+if has('nvim')
+  lua require("init")
+endif

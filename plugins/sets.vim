@@ -1,3 +1,16 @@
+set path+=**
+
+" Nice menu when typing `:find *.py`
+set wildmode=longest,list,full
+set wildmenu
+" Ignore files
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=**/coverage/*
+set wildignore+=**/node_modules/*
+set wildignore+=**/android/*
+set wildignore+=**/ios/*
+set wildignore+=**/.git/*
 " When running vim ., it executes de vimrc there if exists
 set exrc
 "set number
@@ -7,7 +20,7 @@ set guicursor&
 set background=dark
 set ruler
 highlight Comment ctermfg=green
-" Identation setting
+" Indentation setting
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 " Convert a tab into spaces

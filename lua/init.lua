@@ -1,1 +1,2 @@
 require("telescopecfg")
+require("treesittercfg")
