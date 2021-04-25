@@ -3,7 +3,29 @@ echo "Argument: $1";
 echo "Argument: $2";
 
 backup() {
-  echo "Backing up...";
+  case $1 in
+    neovim) backupNeovim;;
+    vim) backupVim;;
+    *) echo "You should specify which editor do you want to install the configs!";;
+  esac
+  # echo "Backing up...";
+  # #cp -r ~/.vim .
+  # cp -r ~/.config/nvim/plugins .
+  # cp -r ~/.config/nvim/lua .
+  # cp ~/.config/nvim/coc-settings.json .
+  # cp ~/.config/nvim/init.vim .
+  # cp ~/.hyper.js .
+  # cp -r ~/.config/coc/ultisnips .
+  # cp ~/.oh-my-zsh/custom/aliases.zsh .
+  # #cp -r ~/.config .
+  # #cp -r ~/.oh-my-zsh .
+  # cp ~/.zshrc .
+  # cp ~/.tmux.conf .
+  # #brew bundle dump
+}
+
+backupNeovim() {
+  echo "Backing up Neovim...";
   #cp -r ~/.vim .
   cp -r ~/.config/nvim/plugins .
   cp -r ~/.config/nvim/lua .
@@ -17,6 +39,20 @@ backup() {
   cp ~/.zshrc .
   cp ~/.tmux.conf .
   #brew bundle dump
+
+}
+
+backupVim() {
+  echo "Backing up Vim...";
+  cp -r ~/.vim/plugins .
+  cp ~/.vim/coc-settings.json .
+  cp ~/.vimrc .
+  cp ~/.hyper.js .
+  cp -r ~/.config/coc/ultisnips .
+  cp ~/.oh-my-zsh/custom/aliases.zsh .
+  cp ~/.zshrc .
+  cp ~/.tmux.conf .
+
 }
 
 install() {
@@ -53,7 +89,7 @@ installVim() {
 }
 
 case $1 in
-  backup) backup;;
+  backup) backup $2;;
   install) install "$2";;
   *) echo "Option invalid!" ;;
 esac
