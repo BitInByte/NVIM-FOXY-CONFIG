@@ -12,6 +12,8 @@
 
 This config is being tested to work in both vim and neovim, it is intended to have a cross platform config which works well in both
 
+If you are using ViM, you should rename the init.vim file to .vimrc
+
 ## Installation process
 
 1. Install Vim-plug https://github.com/junegunn/vim-plug

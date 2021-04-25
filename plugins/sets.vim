@@ -41,7 +41,11 @@ set smartcase
 set ignorecase
 set noswapfile
 set nobackup
-set undodir=~/.config/nvim/undodir
+if has('nvim')
+  set undodir=~/.config/nvim/undodir
+else
+  set undodir=~/.vim/undodir
+endif
 set undofile
 " Highlight as we search
 set incsearch

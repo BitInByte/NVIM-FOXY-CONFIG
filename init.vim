@@ -76,28 +76,58 @@ endif
 
 call plug#end()
 
+" let $VIMRCPATH
+let VIMRCPATH='.vim'
+if has('nvim')
+  let VIMRCPATH = '.config/nvim'
+endif
+
+
+" let $VIMRMPATH='.config/nvim'
+" echo $VIMRMPATH
+
 " Sourcing my configs
-source ~/.config/nvim/plugins/sets.vim
-source ~/.config/nvim/plugins/ale.vim
-source ~/.config/nvim/plugins/fix.vim
-source ~/.config/nvim/plugins/NERD.vim
-source ~/.config/nvim/plugins/keymaps.vim
-source ~/.config/nvim/plugins/cocconfig.vim
-source ~/.config/nvim/plugins/functions.vim
-source ~/.config/nvim/plugins/lightline.vim
-source ~/.config/nvim/plugins/whichkey.vim
-source ~/.config/nvim/plugins/java.vim
-source ~/.config/nvim/plugins/fold.vim
-source ~/.config/nvim/plugins/plugvim.vim
-source ~/.config/nvim/plugins/colors.vim
-source ~/.config/nvim/plugins/terminal_toggle.vim
-source ~/.config/nvim/plugins/cspell.vim
+" source ~/.config/nvim/plugins/sets.vim
+" source ~/.config/nvim/plugins/ale.vim
+" source ~/.config/nvim/plugins/fix.vim
+" source ~/.config/nvim/plugins/NERD.vim
+" source ~/.config/nvim/plugins/keymaps.vim
+" source ~/.config/nvim/plugins/cocconfig.vim
+" source ~/.config/nvim/plugins/functions.vim
+" source ~/.config/nvim/plugins/lightline.vim
+" source ~/.config/nvim/plugins/whichkey.vim
+" source ~/.config/nvim/plugins/java.vim
+" source ~/.config/nvim/plugins/fold.vim
+" source ~/.config/nvim/plugins/plugvim.vim
+" source ~/.config/nvim/plugins/colors.vim
+" source ~/.config/nvim/plugins/terminal_toggle.vim
+" source ~/.config/nvim/plugins/cspell.vim
+" source ~/.config/nvim/plugins/find_and_replace.vim
 "source ~/.config/nvim/plugins/tmux.vim
+
+execute 'source ~/' . VIMRCPATH . '/plugins/sets.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/ale.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/fix.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/NERD.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/keymaps.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/cocconfig.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/functions.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/lightline.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/whichkey.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/java.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/fold.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/plugvim.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/colors.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/terminal_toggle.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/cspell.vim'
+execute 'source ~/' . VIMRCPATH . '/plugins/find_and_replace.vim'
+
 
 if has('nvim')
   source ~/.config/nvim/plugins/telescope.vim
 else
-  source ~/.config/nvim/plugins/fzf.vim
+  " source ~/.config/nvim/plugins/fzf.vim
+  source ~/.vim/plugins/fzf.vim
 endif
 
 " if executable('rg')
