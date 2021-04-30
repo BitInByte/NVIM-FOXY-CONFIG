@@ -105,30 +105,30 @@ endif
 " source ~/.config/nvim/plugins/find_and_replace.vim
 "source ~/.config/nvim/plugins/tmux.vim
 
-execute 'source ~/' . VIMRCPATH . '/plugins/sets.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/ale.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/fix.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/NERD.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/keymaps.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/cocconfig.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/functions.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/lightline.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/whichkey.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/java.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/fold.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/plugvim.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/colors.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/terminal_toggle.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/cspell.vim'
-execute 'source ~/' . VIMRCPATH . '/plugins/find_and_replace.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/sets.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/ale.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/fix.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/NERD.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/keymaps.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/cocconfig.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/functions.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/lightline.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/whichkey.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/java.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/fold.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/plugvim.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/colors.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/terminal_toggle.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/cspell.vim'
+" execute 'source ~/' . VIMRCPATH . '/plugins/find_and_replace.vim'
 
 
-if has('nvim')
-  source ~/.config/nvim/plugins/telescope.vim
-else
-  " source ~/.config/nvim/plugins/fzf.vim
-  source ~/.vim/plugins/fzf.vim
-endif
+" if has('nvim')
+  " source ~/.config/nvim/plugins/telescope.vim
+" else
+  " " source ~/.config/nvim/plugins/fzf.vim
+  " source ~/.vim/plugins/fzf.vim
+" endif
 
 " if executable('rg')
     " let g:rg_derive_root='true'

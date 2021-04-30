@@ -66,6 +66,7 @@ let g:which_key_map.f = {
     \ 't' : ['treesitter', 'Treesitter'],
     \ 's' : ['spell_suggest', 'Spell Suggest'],
     \ 'h' : ['help_tags', 'Help Tags'],
+    \ 'r' : [':call FindAndReplace()', 'Find and Replace'],
     \ 'g' : {
       \ 'name' : '+git',
         \ 's' : ['git_status', 'Git Status'],
