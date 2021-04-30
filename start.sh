@@ -78,10 +78,11 @@ installNeovim() {
 }
 
 installVim() {
+
   echo "Installing ViM...";
   cp -r plugin ~/.vim
   cp -r coc-settings.json ~/.vim
-  cp init.vim ~/.vim
+  cp init.vim ~/.vimrc
   cp .hyper.js ~
   cp -r ultisnips ~/.config/coc
   cp -r aliases.zsh ~/.oh-my-zsh/custom/
