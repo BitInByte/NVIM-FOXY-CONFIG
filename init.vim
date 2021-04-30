@@ -7,18 +7,25 @@
  "Enable file splitting
 filetype plugin indent on
 
+let pluginPath = '~/.vim/plugged'
+
+if has('nvim')
+  let pluginPath = '~/.config/nvim/plugged'
+endif
+
  "Installed via vim plug https://github.com/junegunn/vim-plug
 " :PlugInstall to install them
-if has('nvim')
-  call plug#begin('~/.config/nvim/plugged')
-else
-  call plug#begin('~/.vim/plugged')
-endif
+" if has('nvim')
+  " call plug#begin('~/.config/nvim/plugged')
+" else
+  " call plug#begin('~/.vim/plugged')
+" endif
+call plug#begin(pluginPath)
 " Vim Manual
 Plug 'vim-utils/vim-man'
 
 " Linting
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 " NerdTree Explorer
 Plug 'preservim/nerdtree'
@@ -51,7 +58,6 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'phanviet/vim-monokai-pro'
 
 " Syntax Highlight
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'posva/vim-vue'
 
 "Plug 'tmhedberg/simpylfold'
@@ -77,10 +83,10 @@ endif
 call plug#end()
 
 " let $VIMRCPATH
-let VIMRCPATH='.vim'
-if has('nvim')
-  let VIMRCPATH = '.config/nvim'
-endif
+" let VIMRCPATH='.vim'
+" if has('nvim')
+  " let VIMRCPATH = '.config/nvim'
+" endif
 
 
 " let $VIMRMPATH='.config/nvim'
