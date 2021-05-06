@@ -11,6 +11,7 @@ set wildignore+=**/node_modules/*
 set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
+
 " When running vim ., it executes de vimrc there if exists
 set exrc
 "set number
