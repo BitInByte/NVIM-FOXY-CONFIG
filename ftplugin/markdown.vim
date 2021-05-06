@@ -5,3 +5,9 @@ inoremap ( (
 inoremap [ [
 inoremap { {
 
+" unmap "
+" unmap '
+" unmap (
+" unmap [
+" unmap {
+

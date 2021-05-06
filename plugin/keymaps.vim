@@ -27,6 +27,7 @@ nmap <silent> <C-e> <Plug>(ale_next_wrap)
 " Auto bracket close
 inoremap " ""<left>
 inoremap ' ''<left>
+inoremap ` ``<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
