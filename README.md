@@ -19,6 +19,7 @@
 4. ripgrep: https://github.com/BurntSushi/ripgrep (if neovim) => used in Telescope
 5. Cascadia code font
 6. Python autopep8 is required to pretify
+7. Powerlevel10k (terminal)
 
 ## Config installation
 

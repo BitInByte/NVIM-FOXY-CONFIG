@@ -61,6 +61,9 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'posva/vim-vue'
 
 "Plug 'tmhedberg/simpylfold'
+"
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 if has('nvim')
   " Telescope thing

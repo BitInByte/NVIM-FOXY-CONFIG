@@ -233,5 +233,6 @@ let g:coc_global_extensions = [
       \ 'coc-angular',
       \ 'coc-spell-checker',
       \ 'coc-cspell-dicts',
-      \ 'coc-vimlsp'
+      \ 'coc-vimlsp',
+      \ 'coc-vimtex'
     \ ]

@@ -41,6 +41,7 @@ backupNeovim() {
   cp ~/.zshrc .
   cp ~/.tmux.conf .
   #brew bundle dump
+  cp ~/.p10k.zsh .
 
 }
 
@@ -55,7 +56,7 @@ backupVim() {
   cp ~/.oh-my-zsh/custom/aliases.zsh .
   cp ~/.zshrc .
   cp ~/.tmux.conf .
-
+  cp ~/.p10k.zsh .
 }
 
 install() {
@@ -78,6 +79,7 @@ installNeovim() {
   cp -r aliases.zsh ~/.oh-my-zsh/custom/
   cp .zshrc ~
   cp .tmux.conf ~
+  cp .p10k.zsh ~
 }
 
 installVim() {
@@ -92,6 +94,7 @@ installVim() {
   cp -r aliases.zsh ~/.oh-my-zsh/custom/
   cp .zshrc ~
   cp .tmux.conf ~
+  cp .p10k.zsh ~
 }
 
 case $1 in
