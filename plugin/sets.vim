@@ -1,3 +1,4 @@
+set encoding=UTF-8
 set path+=**
 
 " Nice menu when typing `:find *.py`

@@ -28,6 +28,11 @@
 4. Powerlevel10k (terminal)
 5. Ranger
 
+### Oh My ZSH
+
+1. zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
+2. zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
+
 ## Config installation
 
 You can install this config for both ViM and Neovim and should work for both.

@@ -65,12 +65,18 @@ Plug 'posva/vim-vue'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
+" NerdTree icons
+Plug 'ryanoasis/vim-devicons'
+
+
+
 if has('nvim')
   " Telescope thing
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-fzy-native.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
 else
   " Fuzy Finder
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

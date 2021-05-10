@@ -12,3 +12,11 @@ inoremap { {
 " unmap [
 " unmap {
 
+" Bold text
+function! BoldText()
+  execute "normal! `<v`>y"
+  echo @@
+  execute 'd'
+endfunction
+
+vnoremap <C-b> :call BoldText()<CR>
