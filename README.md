@@ -13,13 +13,18 @@
 
 ## External Dependencies
 
-1. Vim-Plug
-2. Tmux
-3. Neovim nightly (0.5) or Vim 8
-4. ripgrep: https://github.com/BurntSushi/ripgrep (if neovim) => used in Telescope
-5. Cascadia code font
-6. Python autopep8 is required to pretify
-7. Powerlevel10k (terminal)
+### ViM/Neovim
+
+1. Neovim nightly (0.5) or Vim 8
+2. Vim-Plug
+3. Python autopep8 is required to pretify
+
+### Terminal/Homebrew
+
+1. Tmux
+2. ripgrep: https://github.com/BurntSushi/ripgrep (if neovim) => used in Telescope
+3. Cascadia code font
+4. Powerlevel10k (terminal)
 
 ## Config installation
 
