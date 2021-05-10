@@ -19,6 +19,7 @@
 2. Vim-Plug
 3. Python autopep8 is required to pretify
 4. ripgrep: https://github.com/BurntSushi/ripgrep (if neovim) => used in Telescope
+5. Patched Cascadia Code Font (Nerd Fonts)
 
 ### Terminal/Homebrew
 
@@ -48,6 +49,8 @@ If you want to install for Neovim, you should download this config and inside of
 ```zsh
 sudo ./start.sh install neovim
 ```
+
+You should install a patched Cascadia Font and attribute it to the used terminal in order to get the icons on telescope and on nerdtree
 
 ## Some useful commands
 
