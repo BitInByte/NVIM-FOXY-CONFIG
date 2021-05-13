@@ -39,6 +39,7 @@ backupNeovim() {
   #cp -r ~/.config .
   #cp -r ~/.oh-my-zsh .
   cp ~/.zshrc .
+  cp ~/.zshenv .
   cp ~/.tmux.conf .
   #brew bundle dump
   cp ~/.p10k.zsh .
@@ -51,6 +52,7 @@ backupVim() {
   cp -r ~/.vim/ftplugin .
   cp ~/.vim/coc-settings.json .
   cp ~/.vimrc .
+  cp ~/.zshenv .
   cp ~/.hyper.js .
   cp -r ~/.config/coc/ultisnips .
   cp ~/.oh-my-zsh/custom/aliases.zsh .
@@ -78,6 +80,7 @@ installNeovim() {
   cp -r ultisnips ~/.config/coc
   cp -r aliases.zsh ~/.oh-my-zsh/custom/
   cp .zshrc ~
+  cp .zshenv ~
   cp .tmux.conf ~
   cp .p10k.zsh ~
 }
@@ -93,6 +96,7 @@ installVim() {
   cp -r ultisnips ~/.config/coc
   cp -r aliases.zsh ~/.oh-my-zsh/custom/
   cp .zshrc ~
+  cp .zshenv ~
   cp .tmux.conf ~
   cp .p10k.zsh ~
 }
