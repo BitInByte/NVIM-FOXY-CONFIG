@@ -17,7 +17,8 @@
     "php",
     "java",
     "vim",
-    "lua"
+    "lua",
+    "dart"
   ],
   "snippets.extends": {
     "javascriptreact": ["javascript"],
@@ -27,6 +28,10 @@
     "python": ["python"],
     "php": ["php"]
   },
+
+  // typescript stuff
+  "tsserver.trace.server": "verbose",
+  "tsserver.log": "verbose",
 
   // Prettier Settings
   "prettier.singleQuote": true,
@@ -77,5 +82,6 @@
     ".git",
     "*.dll",
     "**/*.dll"
-  ]
+  ],
+  "cSpell.userWords": ["flexbox"]
 }

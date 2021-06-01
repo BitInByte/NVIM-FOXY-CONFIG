@@ -234,5 +234,9 @@ let g:coc_global_extensions = [
       \ 'coc-spell-checker',
       \ 'coc-cspell-dicts',
       \ 'coc-vimlsp',
-      \ 'coc-vimtex'
+      \ 'coc-vimtex',
+      \ 'coc-tailwindcss',
+      \ 'coc-styled-components',
+      \ 'coc-eslint',
+      \ 'coc-flutter'
     \ ]

@@ -83,9 +83,9 @@ nnoremap <leader>om :colorscheme monokai_pro<CR>
 nnoremap <leader>y <C-^>
 
 " Buffers
-nnoremap <Leader>bl :ls<CR>:b<Space>
-nnoremap <leader>b] :bnext<CR>
-nnoremap <leader>b[ :bprev<CR>
+" nnoremap <Leader>bl :ls<CR>:b<Space>
+" nnoremap <leader>b] :bnext<CR>
+" nnoremap <leader>b[ :bprev<CR>
 
 " Move Lines
 nnoremap <C-j> :m .+1<CR>==

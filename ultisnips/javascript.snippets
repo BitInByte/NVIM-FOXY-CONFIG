@@ -30,17 +30,23 @@ endsnippet
 
 snippet rnfc "React Native Functional Component" b
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-
-const ${1:`!p snip.rv = snip.basename`} = props => {
+const ${1:`!p snip.rv = snip.basename`} = (props) => {
   return (
-    <View>
+    <View style={styles.screen}>
+      <Text>The ${1:`!p snip.rv = snip.basename`}</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
 export default ${1:`!p snip.rv = snip.basename`};
 endsnippet

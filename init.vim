@@ -56,6 +56,7 @@ Plug 'liuchengxu/vim-which-key'
 " Color schemes
 Plug 'gruvbox-community/gruvbox'
 Plug 'phanviet/vim-monokai-pro'
+Plug 'arcticicestudio/nord-vim'
 
 " Syntax Highlight
 Plug 'posva/vim-vue'
@@ -67,6 +68,15 @@ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " NerdTree icons
 Plug 'ryanoasis/vim-devicons'
+
+" LaTeX
+Plug 'lervag/vimtex'
+
+" Top ToolBar
+" Plug 'romgrk/barbar.nvim'
+
+" HTML Auto Close
+Plug 'alvan/vim-closetag'
 
 
 
@@ -153,3 +163,12 @@ call plug#end()
 if has('nvim')
   lua require("init")
 endif
+
+" if has("nvim")
+    " set inccommand="nosplit"
+" endif
+
+let g:vimtex_compiler_progname = 'nvr'
+
+  nmap <space>li <plug>(vimtex-info)
+

@@ -23,8 +23,11 @@ set background=dark
 set ruler
 highlight Comment ctermfg=green
 " Indentation setting
-set tabstop=2 softtabstop=2
-set shiftwidth=2
+" set tabstop=2 softtabstop=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
 " Convert a tab into spaces
 set expandtab
 set showmatch
@@ -68,3 +71,11 @@ set ma
 " If enable, change the root folder to the current file directory
 set noautochdir
 " set autochdir
+
+" NerdTree Neovim stuff
+if has('nvim')
+  set inccommand=nosplit
+endif
+
+set expandtab
+
