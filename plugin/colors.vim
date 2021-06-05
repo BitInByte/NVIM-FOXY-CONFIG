@@ -1,8 +1,9 @@
 " Colorschemes
 set termguicolors
 " colorscheme monokai_pro
-colorscheme gruvbox
+" colorscheme gruvbox
 "colorscheme ron
+colorscheme nord
 
 
 " Fixing breaking syntax highlight?

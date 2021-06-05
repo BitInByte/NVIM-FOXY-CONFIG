@@ -1,21 +1,21 @@
 " Move to previous/next
-nnoremap <silent>  <leader>b[ :BufferPrevious<CR>
-nnoremap <silent>  <leader>b] :BufferNext<CR>
+nnoremap <silent>  <space>b[ :BufferPrevious<CR>
+nnoremap <silent>  <space>b] :BufferNext<CR>
 " Re-order to previous/next
-nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
-nnoremap <silent>    <A->> :BufferMoveNext<CR>
+nnoremap <silent>    <space>b{ :BufferMovePrevious<CR>
+nnoremap <silent>    <space>b} :BufferMoveNext<CR>
 " Goto buffer in position...
-nnoremap <silent>    <A-1> :BufferGoto 1<CR>
-nnoremap <silent>    <A-2> :BufferGoto 2<CR>
-nnoremap <silent>    <A-3> :BufferGoto 3<CR>
-nnoremap <silent>    <A-4> :BufferGoto 4<CR>
-nnoremap <silent>    <A-5> :BufferGoto 5<CR>
-nnoremap <silent>    <A-6> :BufferGoto 6<CR>
-nnoremap <silent>    <A-7> :BufferGoto 7<CR>
-nnoremap <silent>    <A-8> :BufferGoto 8<CR>
-nnoremap <silent>    <A-9> :BufferLast<CR>
+nnoremap <silent>    <space>b1 :BufferGoto 1<CR>
+nnoremap <silent>    <space>b2 :BufferGoto 2<CR>
+nnoremap <silent>    <space>b3 :BufferGoto 3<CR>
+nnoremap <silent>    <space>b4 :BufferGoto 4<CR>
+nnoremap <silent>    <space>b5 :BufferGoto 5<CR>
+nnoremap <silent>    <space>b6 :BufferGoto 6<CR>
+nnoremap <silent>    <space>b7 :BufferGoto 7<CR>
+nnoremap <silent>    <space>b8 :BufferGoto 8<CR>
+nnoremap <silent>    <space>b9 :BufferLast<CR>
 " Close buffer
-nnoremap <silent>    <A-c> :BufferClose<CR>
+nnoremap <silent>    <space>bc :BufferClose<CR>
 " Wipeout buffer
 "                          :BufferWipeout<CR>
 " Close commands
@@ -23,12 +23,19 @@ nnoremap <silent>    <A-c> :BufferClose<CR>
 "                          :BufferCloseBuffersLeft<CR>
 "                          :BufferCloseBuffersRight<CR>
 " Magic buffer-picking mode
-nnoremap <silent> <C-s>    :BufferPick<CR>
+nnoremap <silent> <space>bs    :BufferPick<CR>
 " Sort automatically by...
-nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
-nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR>
+nnoremap <silent> <space>bd :BufferOrderByDirectory<CR>
+" nnoremap <silent> <space>bl :BufferOrderByLanguage<CR>
 
 " Other:
 " :BarbarEnable - enables barbar (enabled by default)
 " :BarbarDisable - very bad command, should never be used
+
+" Enable/disable close button
+" let bufferline.closable = v:false
+
+" " Enable/disable auto-hiding the tab bar when there is a single buffer
+" let bufferline.auto_hide = v:true
+
 

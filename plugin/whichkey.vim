@@ -34,6 +34,13 @@ let g:which_key_map.l = {
     \ 'A' : ['<Plug>(coc-codeaction)', 'Action'],
     \ 'q' : ['(coc-fix-current) ', 'Quick Fix'],
     \ 'x' : ['<Plug>(coc-convert-snippet)', 'Convert Selected to Snippet'],
+    \ 'F' : {
+      \ 'name' : '+Flutter',
+        \ 'e' : [':CocCommand flutter.emulators', 'Choose Emulator to Run'],
+        \ 'r' : [':CocCommand flutter.run', 'Run Dev Server'],
+        \ 'l' : [':CocCommand flutter.dev.openDevLog', 'Open Dev Server Logs'],
+        \ 'f' : [':CocCommand flutter.dev.hotRestart', 'Hot Restart the Application']
+        \ },
     \ }
 
 " d - Coc Diagnostics
@@ -130,9 +137,23 @@ let g:which_key_map.p = {
 
 let g:which_key_map.b = {
   \ 'name' : '+buff',
-  \ 'l' : ['bl :ls<CR>:b<Space>', 'List all buffers'],
-  \ ']' : ['b] :bnext<CR>', 'Next buffer'],
-  \ '[' : ['b[ :bprev<CR>', 'Previous buffer'],
+  \ 'l' : [':ls<CR>:b<Space>', 'List all buffers'],
+  \ ']' : [':bnext<CR>', 'Next buffer'],
+  \ '[' : [':bprev<CR>', 'Previous buffer'],
+  \ '{' : [':BufferMovePrevious', 'Move Buffer Previous'],
+  \ '}' : [':BufferMoveNext', 'Move Buffer Previous'],
+  \ '1' : [':BufferGoto 1', 'Move to Buffer 1'],
+  \ '2' : [':BufferGoto 2', 'Move to Buffer 2'],
+  \ '3' : [':BufferGoto 3', 'Move to Buffer 3'],
+  \ '4' : [':BufferGoto 4', 'Move to Buffer 4'],
+  \ '5' : [':BufferGoto 5', 'Move to Buffer 5'],
+  \ '6' : [':BufferGoto 6', 'Move to Buffer 6'],
+  \ '7' : [':BufferGoto 7', 'Move to Buffer 7'],
+  \ '8' : [':BufferGoto 8', 'Move to Buffer 8'],
+  \ '9' : [':BufferLast', 'Move to Buffer 9'],
+  \ 'c' : [':BufferClose', 'Close Buffer'],
+  \ 's' : [':BufferPick', 'Buffer Pick'],
+  \ 'd' : [':BufferOrderByDirectory', 'Order Buffer By Directory']
   \ }
 
 let g:which_key_map.s = {

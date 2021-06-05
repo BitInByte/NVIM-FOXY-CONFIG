@@ -73,7 +73,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'lervag/vimtex'
 
 " Top ToolBar
-" Plug 'romgrk/barbar.nvim'
+Plug 'romgrk/barbar.nvim'
 
 " HTML Auto Close
 Plug 'alvan/vim-closetag'
