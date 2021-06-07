@@ -13,4 +13,25 @@ function! SwapFile()
     execute cmdStr
 endfunction
 
-nnoremap <space>lNs :call SwapFile()<CR>
+nnoremap <space>as :call SwapFile()<CR>
+
+function! ChangeTS()
+    let file_name = expand('%:t:r')
+    let cmdStr =':e %:p:h/' . file_name . '.ts'
+    execute cmdStr
+endfunction
+nnoremap <space>at :call ChangeTS()<CR>
+
+function! ChangeHTML()
+    let file_name = expand('%:t:r')
+    let cmdStr =':e %:p:h/' . file_name . '.html'
+    execute cmdStr
+endfunction
+nnoremap <space>ah :call ChangeHTML()<CR>
+
+function! ChangeCSS()
+    let file_name = expand('%:t:r')
+    let cmdStr =':e %:p:h/' . file_name . '.css'
+    execute cmdStr
+endfunction
+nnoremap <space>ac :call ChangeCSS()<CR>

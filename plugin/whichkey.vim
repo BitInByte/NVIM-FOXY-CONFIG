@@ -54,6 +54,15 @@ let g:which_key_map.d = {
     \ 'r' : ['<Plug>(coc-references)', 'References'],
     \ }
 
+" a - Angular
+let g:which_key_map.a = {
+    \ 'name' : '+Angular',
+    \ 's' : [':call SwapFile()', 'Swap Angular File'],
+    \ 't' : [':call ChangeTS()', 'Change to Component TypeScript File'],
+    \ 'h' : [':call ChangeHTML()', 'Change to Component HTML File'],
+    \ 'c' : [':call ChangeCSS()', 'Change to Component CSS File'],
+    \ }
+
 " let g:which_key_map.f = {
     " \ 'name' : '+fzf',
     " \ 'f' : [':Files', 'Find Files'],

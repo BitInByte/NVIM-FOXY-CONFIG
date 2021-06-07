@@ -90,5 +90,6 @@
 
   // Flutter Settings
   "flutter.autoOpenDevLog": true,
-  "flutter.lsp.debug": true
+  "flutter.lsp.debug": true,
+  "flutter.provider.enableSnippet": true
 }
