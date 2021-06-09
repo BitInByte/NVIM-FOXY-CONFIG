@@ -3,7 +3,8 @@ set termguicolors
 " colorscheme monokai_pro
 " colorscheme gruvbox
 "colorscheme ron
-colorscheme nord
+" colorscheme nord
+colorscheme foxy
 
 
 " Fixing breaking syntax highlight?

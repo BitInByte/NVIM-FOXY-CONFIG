@@ -92,4 +92,5 @@
   "flutter.autoOpenDevLog": true,
   "flutter.lsp.debug": true,
   "flutter.provider.enableSnippet": true
+  // "flutter.trace.server": "verbose"
 }
