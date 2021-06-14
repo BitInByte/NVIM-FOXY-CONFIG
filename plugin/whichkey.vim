@@ -39,7 +39,8 @@ let g:which_key_map.l = {
         \ 'e' : [':CocCommand flutter.emulators', 'Choose Emulator to Run'],
         \ 'r' : [':CocCommand flutter.run', 'Run Dev Server'],
         \ 'l' : [':CocCommand flutter.dev.openDevLog', 'Open Dev Server Logs'],
-        \ 'f' : [':CocCommand flutter.dev.hotRestart', 'Hot Restart the Application']
+        \ 'f' : [':CocCommand flutter.dev.hotRestart', 'Hot Restart the Application'],
+        \ 'd' : [':CocCommand flutter.devices', 'Choose Devices to Run']
         \ },
     \ }
 

@@ -86,11 +86,15 @@
     "*.dll",
     "**/*.dll"
   ],
-  "cSpell.userWords": ["flexbox"],
+  "cSpell.userWords": [
+    "flexbox",
+    "postgres"
+  ],
 
   // Flutter Settings
   "flutter.autoOpenDevLog": true,
   "flutter.lsp.debug": true,
-  "flutter.provider.enableSnippet": true
+  "flutter.provider.enableSnippet": true,
+  "flutter.runDevToolsAtStartup": true
   // "flutter.trace.server": "verbose"
 }
