@@ -75,7 +75,7 @@ installNeovim() {
   echo "Installing Neovim...";
   cp -r plugin ~/.config/nvim
   cp -r ftplugin ~/.config/nvim
-  cp -r ftplugin ~/.config/nvim
+  cp -r colors ~/.config/nvim
   cp -r coc-settings.json ~/.config/nvim
   cp -r lua ~/.config/nvim
   cp init.vim ~/.config/nvim
@@ -93,6 +93,7 @@ installVim() {
   echo "Installing ViM...";
   cp -r plugin ~/.vim
   cp -r ftplugin ~/.vim
+  cp -r colors ~/.vim
   cp -r coc-settings.json ~/.vim
   cp init.vim ~/.vimrc
   cp .hyper.js ~
