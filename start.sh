@@ -29,6 +29,7 @@ backupNeovim() {
   #cp -r ~/.vim .
   # cp -r ~/.config/nvim/plugins .
   cp -r ~/.config/nvim/plugin .
+  cp -r ~/.config/nvim/colors .
   cp -r ~/.config/nvim/ftplugin .
   cp -r ~/.config/nvim/lua .
   cp ~/.config/nvim/coc-settings.json .
@@ -50,6 +51,7 @@ backupVim() {
   echo "Backing up Vim...";
   cp -r ~/.vim/plugin .
   cp -r ~/.vim/ftplugin .
+  cp -r ~/.vim/colors .
   cp ~/.vim/coc-settings.json .
   cp ~/.vimrc .
   cp ~/.zshenv .
@@ -72,6 +74,7 @@ install() {
 installNeovim() {
   echo "Installing Neovim...";
   cp -r plugin ~/.config/nvim
+  cp -r ftplugin ~/.config/nvim
   cp -r ftplugin ~/.config/nvim
   cp -r coc-settings.json ~/.config/nvim
   cp -r lua ~/.config/nvim
