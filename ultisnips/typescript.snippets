@@ -35,3 +35,12 @@ export default {
 	getters: {},
 };
 endsnippet
+
+snippet acs "Angular Class Service" b
+import { Injectable } from '@angular/core';
+
+@Injectable({
+	providedIn: 'root',
+})
+export class ${1:`!p snip.rv = snip.basename`}Service {}
+endsnippet
