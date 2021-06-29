@@ -15,7 +15,7 @@ nnoremap <silent>    <space>b7 :BufferGoto 7<CR>
 nnoremap <silent>    <space>b8 :BufferGoto 8<CR>
 nnoremap <silent>    <space>b9 :BufferLast<CR>
 " Close buffer
-nnoremap <silent>    <space>bc :BufferClose<CR>
+nnoremap <silent>    <space>bq :BufferClose<CR>
 " Wipeout buffer
 "                          :BufferWipeout<CR>
 " Close commands

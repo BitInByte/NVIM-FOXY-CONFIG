@@ -24,10 +24,28 @@
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
 
-snippet slmw "StatelessWidget Material Class Widget" b
+snippet slmw "Stateless Widget Material Class" b
 import 'package:flutter/material.dart';
 
 class ${1:`!p snip.rv = snip.basename`} extends StatelessWidget {
+	@override
+		Widget build(BuildContext context) {
+		return Container(
+
+		);
+	}
+}
+endsnippet
+
+snippet sfmw "Stateful Widget Material Class" b
+import 'package:flutter/material.dart';
+
+class ${1:`!p snip.rv = snip.basename`} extends StatefulWidget {
+	@override
+	_${1:`!p snip.rv = snip.basename`}State createState() => _${1:`!p snip.rv = snip.basename`}State();
+}
+
+class _${1:`!p snip.rv = snip.basename`}State extends State<${1:`!p snip.rv = snip.basename`}> {
 	@override
 		Widget build(BuildContext context) {
 		return Container(

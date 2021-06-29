@@ -179,6 +179,9 @@ nnoremap <silent><nowait> <space>zk  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>zp  :<C-u>CocListResume<CR>
 
+" Hover Definition
+nnoremap <silent><nowait> <space>i  :<C-u>call CocActionAsync('doHover')<CR>
+
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 

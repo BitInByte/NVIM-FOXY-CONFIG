@@ -24,6 +24,7 @@ let g:which_key_map['k'] = [':call ToggleTerminal()', 'Toggle Terminal Buffer']
 "let g:which_key_map['K'] = ['tab term ++close', 'Open Terminal In New Vim Tab']
 let g:which_key_map['r'] = ['za', 'Collapse/Expand Current Cursor Block']
 let g:which_key_map['y'] = ['C-^', 'Toggle Terminal']
+let g:which_key_map['i'] = [':call CocActionAsync("doHover")', 'Hover Definition']
 
 " LSP - language server protocol mappings dictionary
 let g:which_key_map.l = {
@@ -40,6 +41,7 @@ let g:which_key_map.l = {
         \ 'r' : [':CocCommand flutter.run', 'Run Dev Server'],
         \ 'l' : [':CocCommand flutter.dev.openDevLog', 'Open Dev Server Logs'],
         \ 'f' : [':CocCommand flutter.dev.hotRestart', 'Hot Restart the Application'],
+        \ 'q' : [':CocCommand flutter.dev.quit', 'Quit Dev Server'],
         \ 'd' : [':CocCommand flutter.devices', 'Choose Devices to Run']
         \ },
     \ }
@@ -161,7 +163,7 @@ let g:which_key_map.b = {
   \ '7' : [':BufferGoto 7', 'Move to Buffer 7'],
   \ '8' : [':BufferGoto 8', 'Move to Buffer 8'],
   \ '9' : [':BufferLast', 'Move to Buffer 9'],
-  \ 'c' : [':BufferClose', 'Close Buffer'],
+  \ 'q' : [':BufferClose', 'Close Buffer'],
   \ 's' : [':BufferPick', 'Buffer Pick'],
   \ 'd' : [':BufferOrderByDirectory', 'Order Buffer By Directory']
   \ }
