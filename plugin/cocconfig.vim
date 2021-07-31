@@ -46,7 +46,7 @@ endfunction
 " Use <c-space> to trigger completion.
 if has('nvim')
   " inoremap <silent><expr> <c-space> coc#refresh()
-  inoremap <silent><expr> <c-space> coc#refresh()
+  inoremap <silent><expr> <C-p> coc#refresh()
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
@@ -98,6 +98,8 @@ nmap <leader>lr <Plug>(coc-rename)
 "xmap <leader>f  <Plug>(coc-format-selected)
 xmap <leader>lf  <Plug>(coc-format-selected)
 nmap <leader>lf  <Plug>(coc-format-selected)
+xmap <leader>lg  <Plug>(coc-format)
+nmap <leader>lg  <Plug>(coc-format)
 "nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup

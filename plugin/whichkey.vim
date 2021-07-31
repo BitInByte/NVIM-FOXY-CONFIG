@@ -31,6 +31,7 @@ let g:which_key_map.l = {
     \ 'name' : '+lsp',
     \ 'r' : ['<Plug>(coc-rename)', 'Rename'],
     \ 'f' : ['<Plug>(coc-format-selected)', 'Format Selected'],
+    \ 'g' : ['<Plug>(coc-format)', 'Format Buffer'],
     \ 'a' : ['<Plug>(coc-codeaction-selected)', 'Action Selected'],
     \ 'A' : ['<Plug>(coc-codeaction)', 'Action'],
     \ 'q' : ['(coc-fix-current) ', 'Quick Fix'],
@@ -42,7 +43,8 @@ let g:which_key_map.l = {
         \ 'l' : [':CocCommand flutter.dev.openDevLog', 'Open Dev Server Logs'],
         \ 'f' : [':CocCommand flutter.dev.hotRestart', 'Hot Restart the Application'],
         \ 'q' : [':CocCommand flutter.dev.quit', 'Quit Dev Server'],
-        \ 'd' : [':CocCommand flutter.devices', 'Choose Devices to Run']
+        \ 'd' : [':CocCommand flutter.devices', 'Choose Devices to Run'],
+        \ 'w' : [':CocCommand flutter.dev.detach', 'Eject Current Emulator']
         \ },
     \ }
 

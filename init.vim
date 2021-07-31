@@ -79,8 +79,14 @@ Plug 'romgrk/barbar.nvim'
 Plug 'alvan/vim-closetag'
 
 
+" Snippets
+Plug 'honza/vim-snippets'
+
+" Kotlin Syntax Highlight
+Plug 'udalov/kotlin-vim'
 
 if has('nvim')
+
   " Telescope thing
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
