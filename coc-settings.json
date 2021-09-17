@@ -18,7 +18,8 @@
     "vim",
     "lua",
     "dart",
-    "kotlin"
+    "kotlin",
+    "xml"
   ],
   "snippets.extends": {
     "javascriptreact": ["javascript"],
@@ -62,8 +63,15 @@
   "coc.source.around.priority": 3,
   "coc.source.buffer.priority": 4,
 
+  // Java
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.trace.server": "verbose",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/Volumes/FoxyData/COURSES/spring-udemy-course/spring-demo-one/lib/*.jar"
+  ],
+  // Lombok support
+  "java.jdt.ls.vmargs": "-javaagent:/Users/joaopedro/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar",
 
   // Vue Settings
   "vetur.useWorkspaceDependencies": true,
@@ -89,7 +97,14 @@
     "*.dll",
     "**/*.dll"
   ],
-  "cSpell.userWords": ["flexbox", "postgres"],
+  "cSpell.userWords": [
+    "Autowired",
+    "Servlet",
+    "Youtube",
+    "flexbox",
+    "mongodb",
+    "postgres"
+  ],
 
   // Flutter Settings
   "flutter.autoOpenDevLog": true,

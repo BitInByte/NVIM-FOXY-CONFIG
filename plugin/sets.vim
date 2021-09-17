@@ -79,3 +79,5 @@ endif
 
 set expandtab
 
+" AutoReload like a normal IDE
+set autoread
