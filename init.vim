@@ -64,8 +64,8 @@ Plug 'posva/vim-vue'
 "Plug 'tmhedberg/simpylfold'
 "
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
-" Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-Plug 'xuhdev/vim-latex-live-preview'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+" Plug 'xuhdev/vim-latex-live-preview'
 
 " NerdTree icons
 Plug 'ryanoasis/vim-devicons'

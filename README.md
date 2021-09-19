@@ -52,6 +52,8 @@ sudo ./start.sh install neovim
 
 You should install a patched Cascadia Font and attribute it to the used terminal in order to get the icons on telescope and on nerdtree
 
+You should install MacTex in order to compile latex documents
+
 ## Some useful commands
 
 ### Java Commands
