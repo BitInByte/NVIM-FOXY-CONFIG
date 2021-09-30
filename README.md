@@ -20,6 +20,7 @@
 3. Python autopep8 is required to pretify
 4. ripgrep: https://github.com/BurntSushi/ripgrep (if neovim) => used in Telescope
 5. Patched Cascadia Code Font (Nerd Fonts)
+6. MacTex
 
 ### Terminal/Homebrew
 
