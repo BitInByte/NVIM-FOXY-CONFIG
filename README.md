@@ -1,5 +1,9 @@
 # Config For Vim GOD
 
+## DEPRECATED
+
+Use https://github.com/BitInByte/.dotfiles instead.
+
 ## Instalation process
 
 1. Install Vim-plug https://github.com/junegunn/vim-plug
